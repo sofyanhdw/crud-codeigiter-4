@@ -1,0 +1,7 @@
+csrf_test_name : $(input[name=csrf_test_name]).val()
+
+data.csrf_test_name = $(input[name=csrf_test_name]).val()
+
+data : function(response)
+$(input[name=csrf_test_name]).val(response.csrf_test_name)
+return response.data
